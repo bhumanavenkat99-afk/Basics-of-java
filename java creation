@@ -8,3 +8,132 @@
   "Oak" is alredy trademarked;java is publicly announced in May 1995.
 1996 - JDK 1.0
   First official release (January 1996) - java goes mainstream.
+Java 1.0 -Jan 1996 
+  JVM,core libraries,applets-"Write once,Run Anywhere".
+Java 5 - sep 2004
+  Generics,annotations,enums,enhanced for -loop.
+
+
+DATA TYPES :
+1) premitive 
+Numerical data types - int,float,long,byte,double,short
+String data types - Char
+Boolean data types - Boolean
+2) non- premitive
+String,classes,Interface
+
+Method explanation:
+scanner method     example      return type
+nextInt()             25          return type
+nextLong()          9876543210L    long
+nextFloat()          85.5f          float
+nextDouble()         2500.75      double
+next()               venu         string
+nextline()          hello java    string
+next(),charAt(0)       A          char
+nextBoolean()         true       boolean
+
+import java.util.Scanner;
+
+public class introofjava {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int age;
+        String name;
+        float marks;
+        char grade;
+        long total;
+
+        age = sc.nextInt();
+        sc.nextLine(); // Consume newline
+
+        name = sc.nextLine();
+
+        marks = sc.nextFloat();
+
+        grade = sc.next().charAt(0);
+
+        total = sc.nextLong();
+
+        System.out.println("Basics of Java");
+        System.out.println("Age: " + age);
+        System.out.println("Name: " + name);
+        System.out.println("Marks: " + marks);
+        System.out.println("Grade: " + grade);
+        System.out.println("Total: " + total);
+
+        sc.close();
+    }
+}
+
+
+
+
+
+1. Arithmetic Operators
+| Operator | Name | Example | Result |
+|---|---|---|---|
+| + | Addition | 10 + 5 | 15 |
+| - | Subtraction | 10 - 5 | 5 |
+| * | Multiplication | 10 * 5 | 50 |
+| / | Division | 10 / 5 | 2 |
+| % | Modulus | 10 % 3 | 1 |
+2.unary poerators
+| Operator | Name | Example |
+|---|---|---|
+| + | Unary Plus | +a |
+| - | Unary Minus | -a |
+| ++ | Increment | a++ |
+| -- | Decrement | a-- |
+| ! | Logical NOT | !true |
+3.relational operators
+| Operator | Meaning | Example |
+|---|---|---|
+| == | Equal to | 10 == 10 |
+| != | Not equal to | 10 != 5 |
+| > | Greater than | 10 > 5 |
+| < | Less than | 5 < 10 |
+| >= | Greater than or equal | 10 >= 10 |
+| <= | Less than or equal | 5 <= 10 |
+4.logical operators
+| Operator | Name | Meaning |
+|---|---|---|
+| && | Logical AND | Both conditions must be true |
+| \|\| | Logical OR | At least one condition must be true |
+| ! | Logical NOT | Reverses the result |
+5.assignment operators
+| Operator | Example | Equivalent |
+|---|---|---|
+| = | a = 10 | a = 10 |
+| += | a += 5 | a = a + 5 |
+| -= | a -= 5 | a = a - 5 |
+| *= | a *= 5 | a = a * 5 |
+| /= | a /= 5 | a = a / 5 |
+| %= | a %= 5 | a = a % 5 |
+| &= | a &= 5 | a = a & 5 |
+| \|= | a \|= 5 | a = a \| 5 |
+| ^= | a ^= 5 | a = a ^ 5 |
+| <<= | a <<= 2 | a = a << 2 |
+| >>= | a >>= 2 | a = a >> 2 |
+| >>>= | a >>>= 2 | a = a >>> 2 |
+6.bitwise operators
+| Operator | Name |
+|---|---|
+| & | Bitwise AND |
+| \| | Bitwise OR |
+| ^ | Bitwise XOR |
+| ~ | Bitwise Complement |
+7.shift operators
+| Operator | Name |
+|---|---|
+| << | Left Shift |
+| >> | Signed Right Shift |
+| >>> | Unsigned Right Shift |
+8.ternary operator
+condition ? expression1 : expression2;
+
+
+
+
