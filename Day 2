@@ -1,0 +1,4 @@
+CONTROL
+Conditional : If,If else,elseif ladder,Nested if,Switch
+Looping     : for,While,Do while
+Jumping     : Continue,Break,Return
