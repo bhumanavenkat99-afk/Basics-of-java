@@ -1,0 +1,177 @@
+control statements
+                       |
+      -------------------------------------
+      |                |                  |
+      conditional     looping            jumping
+      |                |                  |
+      |                |                  |
+      if               for                continue
+      if-else          while              break
+      else-if ladder   do while           return
+      nested if
+      switch
+
+      ternary operator program
+
+
+      
+ Arrays in Java
+An array in Java is a collection of elements of the same data type stored under a single variable name. Each element is accessed using an index starting from 0.
+1. Types of Arrays
+Type	Description	Example
+One-Dimensional Array	Stores elements in a single sequence	int[] a = {10, 20, 30};
+Two-Dimensional Array	Stores elements in rows and columns	int[][] a = {{1, 2}, {3, 4}};
+Multidimensional Array	Uses three or more dimensions	int[][][] a = new int[2][3][4];
+Jagged Array	Rows can have different lengths	int[][] a = {{1, 2}, {3, 4, 5}};
+
+2. Array Declaration and Initialization
+Declaration:
+int[] arr;
+
+
+Memory allocation:
+arr = new int[5];
+
+
+Declaration with initialization:
+int[] arr = {10, 20, 30, 40, 50};
+
+
+Accessing elements:
+System.out.println(arr[0]); // 10
+System.out.println(arr[2]); // 30
+
+
+3. Array Operations and Methods – Category Wise
+Unlike String, Java arrays have very few built-in members. Most array utility methods are provided by the java.util.Arrays class.
+A. Array Length and Access
+Operation	Description	Example
+arr.length	Returns array length	arr.length
+arr[index]	Accesses an element	arr[2]
+arr[index] = value	Updates an element	arr[1] = 100
+
+B. Array Sorting Methods
+Method	Description
+Arrays.sort()	Sorts array elements
+Arrays.parallelSort()	Sorts using a parallel sorting algorithm when appropriate
+
+C. Array Searching Methods
+Method	Description
+Arrays.binarySearch()	Searches a sorted array
+Arrays.mismatch()	Finds the first mismatching index between arrays
+
+D. Array Comparison Methods
+Method	Description
+Arrays.equals()	Compares array elements
+Arrays.deepEquals()	Compares nested arrays recursively
+Arrays.compare()	Compares arrays lexicographically
+Arrays.deepHashCode()	Computes a hash code for nested arrays
+
+E. Array Copying Methods
+Method	Description
+Arrays.copyOf()	Copies an array to a specified length
+Arrays.copyOfRange()	Copies a specified range
+System.arraycopy()	Copies elements between arrays
+clone()	Creates a shallow copy of an array
+
+F. Array Filling and Updating Methods
+Method	Description
+Arrays.fill()	Fills array elements with a value
+Arrays.setAll()	Sets elements using a generator function
+Arrays.parallelSetAll()	Sets elements using parallel computation
+
+G. Array Conversion Methods
+Method	Description
+Arrays.toString()	Converts a one-dimensional array to readable text
+Arrays.deepToString()	Converts nested arrays to readable text
+Arrays.asList()	Creates a fixed-size list backed by an object array
+Arrays.stream()	Creates a stream from supported array types
+
+
+
+ Java String Methods – Category Wise
+Java String methods can be divided into 10 categories based on their functionality.
+1. String Length and Character Access Methods
+Used to find the length of a string and access individual characters.
+Method	Description
+length()	Returns the number of characters
+charAt(index)	Returns the character at the specified index
+toCharArray()	Converts a string into a character array
+getChars()	Copies characters into an array
+
+2. String Comparison Methods
+Used to compare two strings.
+Method	Description
+equals()	Compares string contents
+equalsIgnoreCase()	Compares strings ignoring case
+compareTo()	Compares strings lexicographically
+compareToIgnoreCase()	Compares lexicographically ignoring case
+contentEquals()	Compares with another character sequence
+regionMatches()	Compares specific portions of strings
+
+3. String Searching Methods
+Used to search for characters or substrings.
+Method	Description
+indexOf()	Finds the first occurrence
+lastIndexOf()	Finds the last occurrence
+contains()	Checks whether a substring exists
+startsWith()	Checks the beginning of a string
+endsWith()	Checks the ending of a string
+matches()	Checks whether a string matches a regular expression
+
+4. String Modification Methods
+Used to create modified versions of strings.
+Method	Description
+toUpperCase()	Converts to uppercase
+toLowerCase()	Converts to lowercase
+replace()	Replaces characters or substrings
+replaceAll()	Replaces matches of a regular expression
+replaceFirst()	Replaces the first regex match
+trim()	Removes leading and trailing characters up to U+0020
+strip()	Removes leading and trailing whitespace
+stripLeading()	Removes leading whitespace
+stripTrailing()	Removes trailing whitespace
+
+5. String Extraction Methods
+Used to extract parts of strings.
+Method	Description
+substring(start)	Extracts from the starting index
+substring(start, end)	Extracts between two indices
+subSequence(start, end)	Returns a character subsequence
+
+6. String Concatenation and Joining Methods
+Used to combine strings.
+Method	Description
+concat()	Joins two strings
+join()	Joins multiple strings with a delimiter
+format()	Creates a formatted string
+
+7. String Splitting Methods
+Used to divide strings into multiple parts.
+Method	Description
+split()	Splits a string using a regular expression
+splitWithDelimiters()	Splits while retaining delimiters in the result
+lines()	Returns a stream of lines
+
+8. String Validation Methods
+Used to check whether strings are empty or blank.
+Method	Description
+isEmpty()	Checks whether string length is zero
+isBlank()	Checks whether a string is empty or contains only whitespace
+
+9. String Conversion Methods
+Used to convert values or strings into other representations.
+Method	Description
+valueOf()	Converts different data types into strings
+copyValueOf()	Converts a character array into a string
+getBytes()	Converts a string into a byte array
+toCharArray()	Converts a string into a character array
+
+10. Other Useful String Methods
+Method	Description
+repeat()	Repeats a string multiple times
+intern()	Returns the canonical representation from the string pool
+hashCode()	Returns the string's hash code
+toString()	Returns the string itself
+indent()	Adjusts indentation of lines
+stripIndent()	Removes incidental indentation
